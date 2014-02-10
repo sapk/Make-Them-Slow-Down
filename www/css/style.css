@@ -3,3 +3,36 @@
     Author     : sapk
 */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body>header {
+    border-bottom: 1px #CCC solid;
+    color: #222;
+    font-size: 15px;
+    padding: 5px 15px;
+    height: 42px;
+    overflow: hidden;
+}
+
+body>header h1>img{
+    margin: 5px 0px -5px 0px;
+}
+
+input[type="search"]{
+    width: 65%;
+    height: 38px;
+    margin: 230px auto;
+    display: block;
+    border: 1px #CCC solid;
+    box-shadow: 0px 0px 3px #999;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+input[type="search"]:hover{
+    box-shadow: 0px 0px 3px #666;
+}
