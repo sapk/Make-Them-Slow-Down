@@ -1,6 +1,13 @@
-var http = require('http');
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello World Node.JS !\n');
-}).listen(8080);
-console.log('Server running at http://0.0.0.0:8080/');
+var connect = require('connect')
+  , http = require('http');
+  
+  
+var app = connect()
+  .use(require('compression')())
+  .use(require('')())
+  .use(require('')())
+  .use(function(req, res){
+    res.end('Hello from Connect!\n');
+  });
+
+http.createServer(app).listen(8080);
